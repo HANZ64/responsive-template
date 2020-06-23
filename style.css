@@ -1,0 +1,121 @@
+body {
+    margin: auto 0;
+    font-family: Arial;
+}
+
+#resolution {
+  text-align: center;
+}
+
+/*.parallax {
+  background-image: url("./img/logo.png");
+  background-color: rgb(0, 0, 0);
+
+  height: 700px;
+
+  background-attachment: fixed;
+  background-position: center 100px; 
+  background-repeat: no-repeat;
+  background-size: 40vh;
+}*/
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+    cursor: pointer;
+    /*display:inline-block;*/
+    color: #FFF;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(255,255,255,0.8) 0px 5px 15px, inset rgba(255,255,255,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(255,255,255,0.8) 0px 5px 15px, inset rgba(255,255,255,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(255,255,255,0.8) 0px 5px 15px, inset rgba(255,255,255,0.15) 0px -10px 20px;
+    box-shadow:rgba(255,255,255,0.8) 0px 5px 15px, inset rgba(255,255,255,0.15) 0px -10px 20px;
+}
+
+/* NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    #mobile {
+      height: 30vh;
+      /*width: 30rem;*/
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+/* COVER */
+.container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover {
+    height: 40vh;
+    /*width: 30rem;*/
+}
+
+/* GRID */
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    padding: 20px;
+    margin: 0px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+
+/***********************************************************************
+ *  Background Colors
+ **********************************************************************/
+
+.black {
+    /*background: #000000;*/ /* Old browsers */
+    background: linear-gradient(#000000, #2b2b2b); /* W3C */
+}
